@@ -1,0 +1,11 @@
+Stress,Sleep,Lights,Noise,Dehydration,HeadacheType
+1,0,1,1,1,Migraine
+0,1,0,1,0,Tension
+1,0,1,0,1,Migraine
+0,1,0,0,0,Normal
+1,0,1,1,1,Migraine
+0,1,0,1,0,Tension
+1,0,1,0,1,Migraine
+0,1,0,0,0,Normal
+1,0,1,1,1,Migraine
+0,1,0,1,0,Tension
