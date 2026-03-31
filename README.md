@@ -61,7 +61,9 @@ Open index.html using Live Server
 The system predicts disease risk using trained AI models.
 ## Project Demo
 
-![Project Screenshot](project-demo.png)
+## Project Demo
+
+[Project Demo](project-demo.png)
 
 
 ## Author
