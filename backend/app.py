@@ -62,5 +62,24 @@ def predict_headache():
     
     return jsonify({"headache_type": str(prediction)})
 
-if __name__ == "__main__":
-    app.run(debug=True)
+import os
+
+UPLOAD_FOLDER = "videos"
+os.makedirs(UPLOAD_FOLDER, exist_ok=True)
+
+@app.route('/upload_video', methods=['POST'])
+def upload_video():
+    video = request.files['video']   # get video
+    filename = video.filename        # get filename
+    
+    video.save("videos/" + filename) # save video
+
+    save_history({
+        "type": "video_feedback",
+        "file": filename,
+        "time": str(datetime.now())
+    })
+
+    return jsonify({"message": "Video uploaded successfully"})
+    
+    app.run(host="0.0.0.0", port=10000)
